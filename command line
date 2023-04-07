@@ -2,3 +2,6 @@
 # Reload the systemd daemon to read the updated unit file:
 sudo systemctl daemon-reload
 sudo systemctl restart <unit-name>.service
+
+#command to view real-time logs for a specific unit file
+sudo journalctl -u antonJob -f
